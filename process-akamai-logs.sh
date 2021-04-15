@@ -6,7 +6,7 @@
         sudo rm -f /data/akamai-logs-unzipped/*
 
         echo "Archiving gzipped logs"
-        sudo cp * /data/akamai-logs-archive/.
+        sudo cp /data/akamai-logs/* /data/akamai-logs-archive/.
 
         echo "gunzipping and processing"
         sudo mv /data/akamai-logs/* /data/akamai-logs-unzipped/.
